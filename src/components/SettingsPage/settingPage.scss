@@ -1,0 +1,20 @@
+.settings-field{
+    min-height: 91vh;
+    font-size: 1.5rem;
+    background:url("../../assets/bg4.jpg") no-repeat center fixed;
+    background-size: cover;
+
+    & > h1 {
+        margin-left: 30px;
+    }
+
+    & > div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 50px;
+        padding: 25px;
+        font-family: sans-serif;
+        color: white;
+    }
+}

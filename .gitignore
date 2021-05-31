@@ -1,0 +1,9 @@
+*.*~
+*[-\.]lock.json
+
+.idea
+
+#Logs
+logs
+*.log
+node_modules
