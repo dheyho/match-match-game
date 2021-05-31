@@ -61,9 +61,7 @@ module.exports =({ develop })=>({
     },
     plugins: [
         new HtmlWebpackPlugin({
-            // title:'Demo webpack'
            template:"./src/index.html"
-            // если нужно готовый шаблон htm
         }),
         new MiniCssExtractPlugin({
             filename: 'styles.css',
@@ -72,16 +70,13 @@ module.exports =({ develop })=>({
             patterns:[
                 {
                     from:'./public',
-                    // если указать to:'', то будет копировать куда укажешь. если не указывать то копирует в корень папки dist
-                    // если папка public будет пустая то build не соберется
-
                 }
             ]
         }),
-        new CleanWebpackPlugin({
-            cleanStaleWebpackAssets:false
-        }),
-        ...esLintPlugin(develop)
+        // new CleanWebpackPlugin({
+        //     cleanStaleWebpackAssets:false
+        // }),
+        // ...esLintPlugin(develop)
 
     ],
     ...devServer(develop),
